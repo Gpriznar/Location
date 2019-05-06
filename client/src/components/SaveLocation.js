@@ -12,7 +12,7 @@ export class SaveLocation extends Component {
   }
 
   handleSaveLocationClick = () => {
-    fetch('http://localhost:8080/api/previous-location', {
+    fetch('http://localhost:8080/api/save-location', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

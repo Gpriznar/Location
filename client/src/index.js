@@ -9,6 +9,7 @@ import reducer from './store/reducer'
 import {SaveLocation} from './components/SaveLocation'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import {BaseLayout} from './components/BaseLayout'
+import {Login} from './components/Login'
 
 const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
@@ -18,7 +19,8 @@ ReactDOM.render(
     <BaseLayout>
       <Switch>
         <Route exact path ="/" component={App} />
-        <Route path="/previous-locations" component={SaveLocation} />
+        <Route path='/login' component={Login} />
+        <Route path="/save-location" component={SaveLocation} />
       </Switch>
     </BaseLayout>
     </BrowserRouter>

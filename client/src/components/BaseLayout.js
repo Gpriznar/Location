@@ -7,11 +7,11 @@ export class Menu extends Component {
     return (
       <ul>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/previous-locations'>Record Hike</NavLink></li>
+        <li><NavLink to='/save-location'>Record Hike</NavLink></li>
+        <li><NavLink to='/login'>Logout</NavLink></li>
       </ul>
     )
   }
-
 }
 
 export class BaseLayout extends Component {

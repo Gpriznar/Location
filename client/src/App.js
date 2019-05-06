@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {PreviousLocationsList} from './components/PreviousLocationsList'
 import {SaveLocation} from './components/SaveLocation'
+import Login from './components/Login'
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Login />
         <PreviousLocationsList  records = {this.state.locationRecords} />
       </div>
     )

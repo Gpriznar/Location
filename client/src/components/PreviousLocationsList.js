@@ -14,7 +14,6 @@ export class PreviousLocationsList extends Component {
       return (
         <div>
         <h1>Previous Locations</h1>
-        <button>test</button>
         <ul>{recordItems}</ul>
         </div>
       )
