@@ -7,7 +7,7 @@ export class SaveLocation extends Component {
     this.state= {
       latitude: 0.0,
       longitude: 0.0,
-      message: ""
+      message: ''
     }
   }
 
@@ -19,7 +19,7 @@ export class SaveLocation extends Component {
     },
     body: JSON.stringify({
       latitude: this.state.latitude,
-      longitude: this.state.longitude,
+      longitude: this.state.longitude
     })
   }).then(response => response.json())
   .then(result => {
@@ -46,7 +46,7 @@ export class SaveLocation extends Component {
   render() {
     return (
       <div>
-      <button onClick={this.handleSaveLocationClick}>Save My Location</button>
+      <button onClick={this.handleSaveLocationClick}>Get Location</button>
       <label>{this.state.message}</label>
       </div>
     )

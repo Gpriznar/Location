@@ -6,9 +6,10 @@ export class Menu extends Component {
   render() {
     return (
       <ul>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/save-location'>Record Hike</NavLink></li>
-        <li><NavLink to='/login'>Logout</NavLink></li>
+        <li><NavLink to='/register'>Register</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
+        <li><NavLink to='/save-location'>Save Location</NavLink></li>
+        <li><NavLink to='/'>Previous Locations</NavLink></li>
       </ul>
     )
   }

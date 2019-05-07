@@ -1,11 +1,15 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  const Locations = sequelize.define('Locations', {
+  const Location = sequelize.define('Location', {
     latitude: DataTypes.FLOAT,
     longitude: DataTypes.FLOAT
   }, {});
-  Locations.associate = function(models) {
-    // associations can be defined here
+  Location.associate = function(models) {
+    Location.belongsTo(models.User, {
+      as: 'user',
+      foreignKey: 'id',
+      onDelete: 'CASCADE'
+    });
   };
-  return Locations;
+  return Location;
 };

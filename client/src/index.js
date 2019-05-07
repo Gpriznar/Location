@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from './store/reducer'
+import Register from './components/Register'
 import {SaveLocation} from './components/SaveLocation'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import {BaseLayout} from './components/BaseLayout'
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path ="/" component={App} />
         <Route path='/login' component={Login} />
+        <Route path='/register' component={Register} />
         <Route path="/save-location" component={SaveLocation} />
       </Switch>
     </BaseLayout>
